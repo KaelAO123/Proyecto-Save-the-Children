@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styletablas.css') }}">
+    <title>Tabla de Voluntarios</title>
+</head>
+<body>
+    <div class="boton-container">
+        <a href="{{ url_for('register_voluntario') }}" class="boton">Añadir Voluntario</a>
+    </div>
+
+    <div class="wrapper">
+        <h2>Lista de Voluntarios</h2>
+        <div class="table">
+            <div class="row header">
+                {% for column in columns %}
+                    <div class="cell">{{ column }}</div>
+                {% endfor %}
+                <div class="cell">Acciones</div>
+            </div>
+            {% for row in data %}
+            <div class="row">
+                {% for cell in row %}
+                    <div class="cell">{{ cell }}</div>
+                {% endfor %}
+                <div class="cell">
+                    <div class="boton-container">
+                        <a href="{{ url_for('edit_voluntario', ciVolunt=row[0]) }}" class="boton">Editar</a>
+                        <form action="{{ url_for('delete_voluntario', ciVolunt=row[0]) }}" method="post" style="display:inline;">
+                            <button type="submit" class="boton">Eliminar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

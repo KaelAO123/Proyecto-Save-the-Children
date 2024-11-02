@@ -1,0 +1,131 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1a202c; /* Azul oscuro */
+    color: #f0f4f8;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+@media screen and (max-width: 580px) {
+    body {
+        font-size: 15px;
+    }
+}
+
+.wrapper {
+    margin: 20px auto;
+    padding: 30px;
+    max-width: 900px;
+    background-color: #2d3748; /* Azul oscuro suave */
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 40px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 580px) {
+    .table {
+        display: block;
+    }
+}
+
+.boton-container {
+    display: flex;
+    gap: 15px; /* Espacio horizontal entre botones */
+    align-items: center; /* Alinea verticalmente si hay diferencias en altura */
+}
+
+.boton {
+    padding: 10px 20px;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    border: 2px solid #63b3ed;
+    background-color: #63b3ed;
+    color: #1a202c;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.boton:hover {
+    background-color: #4299e1;
+    color: #ffffff;
+}
+
+
+
+.row {
+    display: table-row;
+    background-color: #2d3748;
+}
+
+.row:nth-of-type(odd) {
+    background-color: #4a5568; /* Alterna en azul grisáceo */
+}
+
+.row.header {
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #2b6cb0; /* Azul vibrante */
+}
+
+.row.green {
+    background-color: #38a169; /* Verde */
+    color: #ffffff;
+}
+
+.row.blue {
+    background-color: #3182ce; /* Azul claro */
+    color: #ffffff;
+}
+
+@media screen and (max-width: 580px) {
+    .row {
+        display: block;
+        padding: 12px 0;
+        border-bottom: 1px solid #718096;
+    }
+
+    .row.header {
+        height: auto;
+    }
+
+    .row.header .cell {
+        display: none;
+    }
+
+    .cell {
+        display: block;
+        padding: 10px;
+        font-size: 14px;
+        background-color: #2d3748;
+    }
+
+    .cell:before {
+        content: attr(data-title);
+        display: block;
+        font-size: 12px;
+        font-weight: bold;
+        color: #cbd5e0;
+        margin-bottom: 5px;
+    }
+}
+
+.cell {
+    padding: 12px;
+    display: table-cell;
+    font-size: 14px;
+    color: #e2e8f0;
+}

@@ -1,0 +1,91 @@
+body {
+    background-color: #1a202c; /* Fondo azul oscuro para toda la página */
+    font-family: 'Arial', sans-serif;
+}
+
+.form {
+    width: 360px;
+    min-height: 500px;
+    background: #2d3748; /* Fondo azul muy oscuro */
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    margin: 60px auto;
+    padding: 40px;
+    max-width: calc(100vw - 60px);
+    box-sizing: border-box;
+    position: relative;
+}
+
+h2 {
+    margin: 0 0 20px;
+    padding-bottom: 8px;
+    color: #ffffff; /* Texto blanco */
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 3px solid #63b3ed; /* Línea celeste */
+}
+
+input {
+    width: 100%;
+    padding: 12px 10px;
+    box-sizing: border-box;
+    background: #1a202c; /* Fondo del input azul oscuro */
+    outline: none;
+    border: 1px solid #4a5568;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    color: #ffffff; /* Texto blanco */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+    border-color: #63b3ed; /* Borde celeste al enfocar */
+    box-shadow: 0 0 5px rgba(99, 179, 237, 0.5);
+}
+
+p label {
+    font-size: 14px;
+    color: #cbd5e0; /* Texto gris claro */
+    display: block;
+    margin-bottom: 5px;
+}
+
+.boton {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    background: #63b3ed; /* Fondo celeste */
+    color: #2d3748; /* Texto azul oscuro */
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.boton:hover {
+    background: #4299e1; /* Fondo celeste más oscuro en hover */
+}
+
+.referencias {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    background: #2d3748;
+    color: #ffffff;
+    width: 300px;
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+span {
+    margin: 0 10px 0 0;
+    font-weight: bold;
+    color: #63b3ed; /* Celeste */
+}

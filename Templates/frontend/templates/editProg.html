@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Editar Programa</title>
+  <link rel="stylesheet" media="all" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+<form class="form" method="POST">
+  <h2>Editar Registro de Programa</h2>
+  <p>ID Programa: <input name="idPrograma" type="text" value="{{ programa[0] }}" readonly></p>
+  <p>ID Proyecto: <input name="idProyecto" type="text" value="{{ programa[1] }}" required></p>
+  <button class="boton">Guardar Cambios</button>
+</form>
+</body>
+</html>

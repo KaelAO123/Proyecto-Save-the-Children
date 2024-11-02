@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Editar Campaña</title>
+  <link rel="stylesheet" media="all" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+<form class="form" method="POST">
+  <h2>Editar Registro de Campaña</h2>
+  <p>ID Campaña: <input name="idCampania" type="text" value="{{ campana[0] }}" readonly></p>
+  <p>ID Proyecto: <input name="idProyecto" type="text" value="{{ campana[1] }}" required></p>
+  <p>Fecha Inicio: <input name="fechaIni" type="date" value="{{ campana[2] }}" required></p>
+  <p>Fecha Fin: <input name="fechaFin" type="date" value="{{ campana[3] }}" required></p>
+  <button class="boton">Guardar Cambios</button>
+</form>
+</body>
+</html>

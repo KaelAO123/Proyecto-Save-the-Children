@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Editar Institución</title>
+  <link rel="stylesheet" media="all" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+<form class="form" method="POST">
+  <h2>Editar Registro de Institución</h2>
+  <p>NIT: <input name="nit" type="text" value="{{ institucion[0] }}" readonly></p>
+  <p>Nombre: <input name="nombre" type="text" value="{{ institucion[1] }}" required></p>
+  <p>Descripción: <input name="descripcion" type="text" value="{{ institucion[2] }}" required></p>
+  <button class="boton">Guardar Cambios</button>
+</form>
+</body>
+</html>

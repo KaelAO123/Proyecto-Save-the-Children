@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Editar Proyecto</title>
+  <link rel="stylesheet" media="all" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+<form class="form" method="POST">
+  <h2>Editar Registro de Proyecto</h2>
+  <p>ID Proyecto: <input name="idProyecto" type="text" value="{{ proyecto[0] }}" readonly></p>
+  <p>C.I. Encargado: <input name="ciEncargado" type="text" value="{{ proyecto[1] }}" required></p>
+  <p>C.I. Creador: <input name="ciCreador" type="text" value="{{ proyecto[2] }}" required></p>
+  <p>Nombre: <input name="nombre" type="text" value="{{ proyecto[3] }}" required></p>
+  <p>Objetivo: <input name="objetivo" type="text" value="{{ proyecto[4] }}" required></p>
+  <p>Lugar: <input name="lugar" type="text" value="{{ proyecto[5] }}" required></p>
+  <p>Presupuesto: <input name="presupuesto" type="number" step="0.01" value="{{ proyecto[6] }}" required></p>
+  <p>Descripción: <input name="descripcion" type="text" value="{{ proyecto[7] }}" required></p>
+  <button class="boton">Guardar Cambios</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registro de Persona</title>
+  <link rel="stylesheet" media="all" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+<form class="form" method="POST">
+  <h2>Registro de Persona</h2>
+  <p>C.I.: <input name="ci" type="text" required></p>
+  <p>Nombre: <input name="nombre" type="text" required></p>
+  <p>Apellido Paterno: <input name="paterno" type="text" required></p>
+  <p>Apellido Materno: <input name="materno" type="text" required></p>
+  <p>Fecha de Nacimiento: <input name="fecNac" type="date" required></p>
+  <p>Número de Contacto: <input name="numeroContacto" type="text" required></p>
+  <p>Ubicación: <input name="ubicacion" type="text" required></p>
+  <button class="boton">Registrar</button>
+</form>
+</body>
+</html>

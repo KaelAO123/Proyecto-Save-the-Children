@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registro de Campaña</title>
+  <link rel="stylesheet" media="all" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+<form class="form" method="POST">
+  <h2>Registro de Campaña</h2>
+  <p>ID Campaña: <input name="idCampania" type="text" required></p>
+  <p>ID Proyecto: <input name="idProyecto" type="text" required></p>
+  <p>Fecha Inicio: <input name="fechaIni" type="date" required></p>
+  <p>Fecha Fin: <input name="fechaFin" type="date" required></p>
+  <button class="boton">Registrar</button>
+</form>
+</body>
+</html>

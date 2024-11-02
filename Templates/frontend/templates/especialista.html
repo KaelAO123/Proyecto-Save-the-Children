@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styletablas.css') }}">
+    <title>Tabla de Especialistas</title>
+</head>
+<body>
+    <div class="boton-container">
+        <a href="{{ url_for('register_especialista') }}" class="boton">Añadir Especialista</a>
+    </div>
+
+    <div class="wrapper">
+        <h2>Lista de Especialistas</h2>
+        <div class="table">
+            <div class="row header">
+                <div class="cell">C.I. Especialista</div>
+                <div class="cell">Especialidad</div>
+                <div class="cell">Acciones</div>
+            </div>
+            {% for row in data %}
+            <div class="row">
+                <div class="cell">{{ row[0] }}</div>
+                <div class="cell">{{ row[1] }}</div>
+                <div class="cell">
+                    <div class="boton-container">
+                        <a href="{{ url_for('edit_especialista', ciEspecialista=row[0]) }}" class="boton">Editar</a>
+                        <form action="{{ url_for('delete_especialista', ciEspecialista=row[0]) }}" method="post" style="display:inline;">
+                            <button type="submit" class="boton">Eliminar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

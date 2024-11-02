@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registro de Empleado</title>
+  <link rel="stylesheet" media="all" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+<form class="form" method="POST">
+  <h2>Registro de Empleado</h2>
+  <p>C.I. Empleado: <input name="ciEmpleado" type="text" required></p>
+  <p>Ocupación: <input name="ocupacion" type="text" required></p>
+  <p>Correo Electrónico: <input name="correoElec" type="email" required></p>
+  <p>Sueldo: <input name="sueldo" type="number" step="0.01" required></p>
+  <button class="boton">Registrar</button>
+</form>
+</body>
+</html>
