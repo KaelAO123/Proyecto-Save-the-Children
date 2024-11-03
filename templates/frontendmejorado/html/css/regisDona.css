@@ -50,6 +50,14 @@
     box-shadow: 0px 0px 5px rgba(227, 6, 19, 0.3);
 }
 
+.inline-fields {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px; /* Añade un espacio entre los campos */
+}
+
+
+
 .btn-registrar {
     width: 100%;
     padding: 12px;
