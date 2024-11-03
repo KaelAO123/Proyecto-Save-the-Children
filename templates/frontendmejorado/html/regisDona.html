@@ -10,15 +10,29 @@
     <div class="registro-donativo">
         <h2>Registro de Donativo</h2>
         <form action="/registrar_donativo" method="POST" class="formulario-donativo">
+            <label for="nombre">Nombre del Donante:</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Ingrese su nombre completo">
+            
             <label for="ci">CI del Donante:</label>
             <input type="text" id="ci" name="ci" required placeholder="Ingrese el CI del donante">
-            <label for="idProy">ID del Proyecto:</label>
+            
+            <label for="idProy">Nombre del proyecto:</label>
             <input type="text" id="idProy" name="idProy" required placeholder="Ingrese el ID del proyecto">
+            
             <label for="monto">Monto Donado:</label>
             <input type="number" id="monto" name="monto" required placeholder="Ingrese el monto" step="0.01" min="0">
+            
+            <label for="tarjeta">Número de Tarjeta:</label>
+            <input type="text" id="tarjeta" name="tarjeta" required placeholder="Ingrese el número de la tarjeta" maxlength="16">
+            
+            <label for="fecha">Fecha de Vencimiento:</label>
+            <input type="text" id="fecha" name="fecha" required placeholder="MM/AA" maxlength="5">
+            
+            <label for="codigo">Código de Seguridad (CVV):</label>
+            <input type="text" id="codigo" name="codigo" required placeholder="CVV" maxlength="3">
+            
             <button type="submit" class="btn-registrar">Registrar Donativo</button>
         </form>
     </div>
-
 </body>
 </html>
