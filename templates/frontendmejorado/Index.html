@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página SG de STC</title>
+    <link rel="stylesheet" href="Assets/Css/Main.css">
+    <script src="Assets/JavaScript/Main.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="envoltorio" id="Sticky">
+        <nav>
+            <input type="checkbox" id="mostrar-menu">
+            <div class="menu">
+                <!-- Logo -->
+                <div class="logo">
+                    <img alt="logo-menu" src="Assets/Image/Logo.png">
+                    <a href="#">SISTEMA DE GESTIÓN DE SAVE THE CHILDREN</a>
+                </div>
+                <!-- Menú -->
+                <ul class="enlaces">
+                    <!-- Postulación para Proyecto -->
+                    <li>
+                        <a href="#" class="desktop-link">Postulación</a>
+                        <input type="checkbox" id="mostrar-postulacion">
+                        <label for="mostrar-postulacion">Postulación</label>
+                        <ul>
+                            <li><a href="html/postulacion.html">Convocatorias</a></li>
+                            <li><a href="html/registro_voluntarios.html">Registro de Voluntario</a></li>
+                            <li><a href="html/controlVol.html">Control de Voluntarios</a></li>
+                        </ul>
+                    </li>
+                    <!-- Donaciones -->
+                    <li>
+                        <a href="html/donacion.html" class="desktop-link">Donaciones</a>
+                        <input type="checkbox" id="mostrar-donaciones">
+                        <label for="mostrar-donaciones">Donaciones</label>
+                        <ul>
+                            <li><a href="html/politicasVol.html">Política de Voluntario</a></li>
+                            <li><a href="html/regisDona.html">Registrar Donativo</a></li>
+                        </ul>
+                    </li>
+                    <!-- Políticas -->
+                    <li>
+                        <a href="html/politica.html" class="desktop-link">Políticas</a>
+                        <input type="checkbox" id="mostrar-politicas">
+                        <label for="mostrar-politicas">Políticas</label>
+                        <ul>
+                            <li><a href="html/sancionado.html">Sancionados</a></li>
+                            <li><a href="html/apliSanc.html">Aplicar Sanción</a></li>
+                        </ul>
+                    </li>
+                    <!-- Áreas de Trabajo -->
+                    <li>
+                        <a href="#" class="desktop-link">Áreas</a>
+                        <input type="checkbox" id="mostrar-areas">
+                        <label for="mostrar-areas">Áreas de Trabajo</label>
+                        <ul>
+                            <li><a href="#">Proyectos</a></li>
+                            <li><a href="#">Aliados y Socios</a></li>
+                        </ul>
+                    </li>
+                    <!-- Usuarios -->
+                    <li>
+                        <a href="#" class="desktop-link">Usuarios</a>
+                        <input type="checkbox" id="mostrar-usuarios">
+                        <label for="mostrar-usuarios">Usuarios</label>
+                        <ul>
+                            <li><a href="#">Registros de Usuarios</a></li>
+                            <li><a href="#">Visualización Perfil</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- Botón menú (Responsivo) -->
+            <label for="mostrar-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+        </nav>
+    </div>
+
+    <!-- Contenido de Ejemplo -->
+    <div class="banner"></div>
+    <div class="ejemplo">
+        <div class="texto">
+            <h1>Título</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies, sapien a porttitor euismod...</p>
+        </div>
+    </div>
+</body>
+</html>
