@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicar Sanción</title>
+    <link rel="stylesheet" href="css/apliSanc.css">
+</head>
+<body>
+
+    <div class="formulario-sancion">
+        <h2>Aplicar Sanción</h2>
+        <form action="procesar_sancion.php" method="POST">
+            <div class="form-group">
+                <label for="ci">CI del Sancionado:</label>
+                <input type="text" id="ci" name="ci" required>
+            </div>
+
+            <div class="form-group">
+                <label for="clausula">Cláusula:</label>
+                <input type="text" id="clausula" name="clausula" required>
+            </div>
+
+            <button type="submit">Aplicar Sanción</button>
+        </form>
+    </div>
+
+</body>
+</html>

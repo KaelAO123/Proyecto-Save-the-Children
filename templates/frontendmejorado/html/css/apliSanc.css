@@ -1,0 +1,62 @@
+* {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.formulario-sancion {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-sancion h2 {
+    color: #e30613;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e30613;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c00511;
+}
+
+@media (max-width: 768px) {
+    .formulario-sancion {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}

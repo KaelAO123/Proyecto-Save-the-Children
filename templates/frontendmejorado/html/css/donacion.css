@@ -1,0 +1,47 @@
+* {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+.control-donaciones {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+
+.control-donaciones h2 {
+    color: #e30613;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.tabla-donaciones {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 800px;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tabla-donaciones thead {
+    background-color: #e30613;
+    color: white;
+}
+
+.tabla-donaciones th,
+.tabla-donaciones td {
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.tabla-donaciones tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Efecto hover */
+.tabla-donaciones tbody tr:hover {
+    background-color: #ffe6e6;
+}

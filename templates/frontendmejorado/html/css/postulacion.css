@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.banner {
+    height: 60vh;
+    background: white;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.banner .texto {
+    max-width: 900px;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(136, 1, 1);
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 18px;
+    color: #333;
+}
+
+.ejemplo {
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+}
+
+.ejemplo .texto {
+    max-width: 900px;
+    margin: auto;
+}
+
+.ejemplo h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: rgb(136, 1, 1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.convocatoria {
+    background: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.convocatoria h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.convocatoria p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.convocatoria p strong {
+    color: rgb(136, 1, 1);
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(136, 1, 1);
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.boton:hover {
+    background-color: rgb(100, 1, 1);
+}
+
+.pie-de-pagina {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.pie-de-pagina p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 30px;
+    }
+
+    .banner p,
+    .ejemplo h2,
+    .convocatoria h3,
+    .convocatoria p {
+        font-size: 16px;
+    }
+
+    .boton {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}

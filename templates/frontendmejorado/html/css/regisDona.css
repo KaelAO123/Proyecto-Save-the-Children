@@ -1,0 +1,68 @@
+* {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+.registro-donativo {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+
+.registro-donativo h2 {
+    color: #e30613;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.formulario-donativo {
+    max-width: 400px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-donativo label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+}
+
+.formulario-donativo input[type="text"],
+.formulario-donativo input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.formulario-donativo input[type="text"]:focus,
+.formulario-donativo input[type="number"]:focus {
+    border-color: #e30613;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(227, 6, 19, 0.3);
+}
+
+.btn-registrar {
+    width: 100%;
+    padding: 12px;
+    background-color: #e30613;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-registrar:hover {
+    background-color: #c00510;
+}
